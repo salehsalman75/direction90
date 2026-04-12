@@ -152,7 +152,9 @@ throw new Error("Something went wrong while submitting your assessment.");
 setIsSubmitted(true);
 } catch (error) {
 setSubmitError(
-error instanceof Error ? error.message : "Something went wrong. Please try again."
+error instanceof Error
+? error.message
+: "Something went wrong. Please try again."
 );
 } finally {
 setIsSubmitting(false);
@@ -173,23 +175,23 @@ Your assessment has been received.
 </h1>
 
 <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600">
-Thank you. Your answers are now in the system, and your Direction90 report
-can be prepared and sent to your email.
+Thank you. Your inputs have been submitted successfully and are ready
+for report generation.
 </p>
 
 <div className="mt-10 rounded-3xl border border-gray-200 bg-gray-50 p-6">
 <h2 className="text-lg font-semibold text-gray-900">What happens next</h2>
 
 <div className="mt-4 space-y-3 text-gray-600">
-<p>01 — Your answers are reviewed</p>
-<p>02 — Your direction is identified</p>
-<p>03 — Your 90-day report is prepared</p>
+<p>01 — Your inputs are processed</p>
+<p>02 — Patterns and signals are identified</p>
+<p>03 — Your report is generated</p>
 <p>04 — Your report is sent to {email}</p>
 </div>
 </div>
 
 <p className="mt-6 text-sm text-gray-500">
-Private. Thoughtful. Built for real decisions.
+Digital product delivery only.
 </p>
 </div>
 </div>
@@ -231,20 +233,23 @@ style={{ width: `${progress}%` }}
 {step === 0 && (
 <>
 <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-Your 90-Day Direction
+Complete your Direction90 assessment
 </h1>
 
 <p className="mt-8 text-lg leading-relaxed text-gray-600">
-Clarity on whether to stay, reposition, or prepare your next move.
+Your responses will be used to generate a structured digital
+report.
 </p>
 
 <p className="mt-3 text-lg leading-relaxed text-gray-600">
-Answer honestly. This is for you.
+Answer based on your current situation.
 </p>
 </>
 )}
 
-<h2 className={`${step === 0 ? "mt-14" : ""} text-2xl font-semibold tracking-tight sm:text-3xl`}>
+<h2
+className={`${step === 0 ? "mt-14" : ""} text-2xl font-semibold tracking-tight sm:text-3xl`}
+>
 {currentQuestion.title}
 </h2>
 
@@ -287,7 +292,7 @@ Almost done.
 </h1>
 
 <p className="mt-6 text-lg leading-relaxed text-gray-600">
-Tell us where to send your Direction90 report.
+Enter your details to receive your generated Direction90 report.
 </p>
 
 <div className="mt-10 space-y-6">
@@ -313,7 +318,7 @@ className="w-full rounded-2xl border border-gray-200 px-4 py-4 text-base text-gr
 htmlFor="email"
 className="mb-2 block text-sm font-medium text-gray-700"
 >
-Where should we send your Direction90 report? *
+Where should we send your report? *
 </label>
 <input
 id="email"
@@ -324,7 +329,7 @@ placeholder="you@example.com"
 className="w-full rounded-2xl border border-gray-200 px-4 py-4 text-base text-gray-900 outline-none transition focus:border-gray-900"
 />
 <p className="mt-2 text-sm text-gray-500">
-We’ll email it to you instantly.
+Your digital report will be delivered to this email.
 </p>
 </div>
 </div>
@@ -336,7 +341,7 @@ onClick={handleSubmit}
 disabled={!canSubmit || isSubmitting}
 className="rounded-2xl bg-gray-950 px-8 py-4 font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-40"
 >
-{isSubmitting ? "Submitting..." : "Get My Direction90 Report →"}
+{isSubmitting ? "Submitting..." : "Generate My Direction90 Report"}
 </button>
 </div>
 

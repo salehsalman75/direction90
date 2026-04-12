@@ -1,23 +1,25 @@
 import "./globals.css";
-import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 title: "Direction90",
-description: "Get clear on your next move.",
+description:
+"A digital report generated from your assessment inputs to provide a structured direction signal.",
 };
 
 export default function RootLayout({
 children,
-}: Readonly<{
+}: {
 children: React.ReactNode;
-}>) {
+}) {
 return (
 <html lang="en">
-<body className="bg-white text-gray-900 antialiased">
+<body className="bg-white text-gray-900">
 {children}
 <Footer />
 </body>
 </html>
 );
 }
+

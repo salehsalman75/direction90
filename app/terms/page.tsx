@@ -1,120 +1,92 @@
 export default function TermsPage() {
 return (
 <main className="min-h-screen bg-white px-6 py-20 text-gray-900">
-<div className="mx-auto max-w-3xl">
-<p className="text-sm text-gray-500">Direction90</p>
+<div className="mx-auto max-w-3xl space-y-8">
+<h1 className="text-3xl font-semibold">Terms of Service</h1>
 
-<h1 className="mt-4 text-4xl font-semibold tracking-tight">
-Terms of Service
-</h1>
-
-<p className="mt-6 text-lg leading-8 text-gray-600">
-These Terms of Service govern your use of the Direction90 website and
-digital products. By accessing or purchasing from Direction90, you
-agree to these terms.
-</p>
-
-<div className="mt-12 space-y-10 text-gray-700">
-<section>
-<h2 className="text-2xl font-semibold">1. Digital Product</h2>
-<p className="mt-4 leading-8">
-Direction90 provides a digital product designed to help users gain
-career clarity based on their submitted information. No physical
-item will be shipped.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">2. Personal Responsibility</h2>
-<p className="mt-4 leading-8">
-Direction90 is intended for informational and reflective purposes.
-It does not replace professional legal, financial, medical, or
-mental health advice. You remain responsible for your own career
-and life decisions.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">3. Accuracy of Information</h2>
-<p className="mt-4 leading-8">
-You agree to provide accurate and honest information when using
-the assessment or purchasing the product. The quality of the
-report depends in part on the information you provide.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">4. Payments</h2>
-<p className="mt-4 leading-8">
-All payments are processed through third-party payment providers.
-By purchasing, you agree to pay the listed price and any
-applicable fees or taxes.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">5. Refunds</h2>
-<p className="mt-4 leading-8">
-Refunds are handled according to our Refund Policy. Please review
-that page before purchasing.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">6. Intellectual Property</h2>
-<p className="mt-4 leading-8">
-All content on Direction90, including text, branding, design, and
-generated report formats, is owned by Direction90 unless stated
-otherwise. You may not reproduce, resell, or redistribute our
-materials without permission.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">7. Prohibited Use</h2>
-<p className="mt-4 leading-8">
-You agree not to misuse the website, attempt unauthorized access,
-interfere with site functionality, or use the product for unlawful
-purposes.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">8. No Guarantees</h2>
-<p className="mt-4 leading-8">
-While we aim to provide thoughtful and high-quality guidance,
-Direction90 does not guarantee any specific career, financial, or
-personal outcome.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">9. Limitation of Liability</h2>
-<p className="mt-4 leading-8">
-To the fullest extent permitted by law, Direction90 will not be
-liable for indirect, incidental, consequential, or special damages
-arising from your use of the website or product.
-</p>
-</section>
-
-<section>
-<h2 className="text-2xl font-semibold">10. Changes to These Terms</h2>
-<p className="mt-4 leading-8">
-We may update these Terms of Service from time to time. Continued
-use of the website after updates means you accept the revised
+<p>
+By purchasing and using Direction90, you agree to the following
 terms.
 </p>
+
+<section>
+<h2 className="text-xl font-semibold">1. Product Description</h2>
+<p>
+Direction90 is an informational online product that generates a
+structured report based on your submitted responses.
+</p>
+<p>
+The output is automatically generated and is intended for personal
+informational use only.
+</p>
 </section>
 
 <section>
-<h2 className="text-2xl font-semibold">11. Contact</h2>
-<p className="mt-4 leading-8">
-For questions about these Terms, contact us at:
-<br />
-<span className="font-medium">support@direction90.com</span>
+<h2 className="text-xl font-semibold">2. No Professional Advice</h2>
+<p>
+Direction90 does not provide consulting, coaching, therapy, legal,
+financial, medical, or any other professional advice.
+</p>
+<p>
+You should not rely on the output as a substitute for professional
+guidance.
 </p>
 </section>
-</div>
+
+<section>
+<h2 className="text-xl font-semibold">3. No Guaranteed Outcomes</h2>
+<p>
+Results are generated based on your inputs and are not guaranteed to
+be accurate, complete, or applicable to your specific situation.
+</p>
+</section>
+
+<section>
+<h2 className="text-xl font-semibold">4. User Responsibility</h2>
+<p>
+You are responsible for the accuracy of the information you submit.
+</p>
+<p>
+The quality and relevance of the output depend on your inputs.
+</p>
+</section>
+
+<section>
+<h2 className="text-xl font-semibold">5. Payment</h2>
+<p>
+Direction90 is offered as a one-time payment product.
+</p>
+<p>
+You receive access to the questionnaire and report generation flow
+after payment.
+</p>
+</section>
+
+<section>
+<h2 className="text-xl font-semibold">6. Refund Policy</h2>
+<p>
+Refunds are handled according to our refund policy. Please review
+the refund policy page for details.
+</p>
+</section>
+
+<section>
+<h2 className="text-xl font-semibold">7. Limitation of Liability</h2>
+<p>
+Direction90 is provided “as is” without warranties of any kind.
+</p>
+<p>
+We are not responsible for any decisions, actions, or outcomes
+resulting from your use of the product.
+</p>
+</section>
+
+<section>
+<h2 className="text-xl font-semibold">8. Contact</h2>
+<p>
+If you have questions, contact us at: support@direction90.com
+</p>
+</section>
 </div>
 </main>
 );
