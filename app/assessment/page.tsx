@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import AssessmentForm from "@/components/AssessmentForm";
 
 export default function AssessmentPage() {
 const [status, setStatus] = useState<"checking" | "allowed" | "denied">("checking");
@@ -33,32 +34,9 @@ return (
 
 return (
 <main className="min-h-screen bg-white text-gray-950">
-<section className="px-6 py-20">
-<div className="mx-auto max-w-3xl">
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
-Direction90
-</p>
-
-<h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-Assessment
-</h1>
-
-<p className="mt-6 text-lg leading-8 text-gray-600">
-This is the questionnaire page. Only users with payment access can view it.
-</p>
-</div>
-</section>
+<AssessmentForm />
 </main>
 );
 }
-
-
-
-
-
-
-
-
-
 
 
