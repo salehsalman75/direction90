@@ -1,7 +1,7 @@
 export default function SuccessPage() {
 return (
 <main className="min-h-screen bg-white text-gray-900">
-<section className="mx-auto flex max-w-3xl px-6 py-24">
+<section className="mx-auto flex min-h-screen max-w-3xl items-center justify-center px-6 py-20">
 <div className="w-full rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm md:p-12">
 <p className="text-xs font-medium uppercase tracking-[0.25em] text-gray-500">
 Direction90
@@ -43,3 +43,5 @@ Continue to questionnaire
 </main>
 );
 }
+
+
