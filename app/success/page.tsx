@@ -4,35 +4,48 @@ import { useEffect } from "react";
 
 export default function SuccessPage() {
 useEffect(() => {
-const run = async () => {
-const params = new URLSearchParams(window.location.search);
-const email = params.get("email");
-
-if (!email) {
-window.location.href = "/checkout";
-return;
-}
-
-const res = await fetch(`/api/payment-status?email=${email}`);
-const data = await res.json();
-
-if (data.paid) {
 document.cookie = "direction90_access=true; path=/";
+const timer = setTimeout(() => {
 window.location.href = "/assessment";
-} else {
-window.location.href = "/checkout";
-}
-};
+}, 1200);
 
-run();
+return () => clearTimeout(timer);
 }, []);
 
 return (
-<div className="flex min-h-screen items-center justify-center">
-<p>Verifying payment...</p>
+<main className="min-h-screen bg-white text-gray-950">
+<section className="mx-auto flex min-h-screen max-w-3xl items-center justify-center px-6 py-20">
+<div className="w-full rounded-[2rem] border border-gray-200 bg-white p-8 text-center shadow-sm sm:p-12">
+<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+Direction90
+</p>
+
+<h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+Payment successful
+</h1>
+
+<p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
+Your payment was received successfully.
+</p>
+
+<p className="mt-2 text-base leading-8 text-gray-600 sm:text-lg">
+Redirecting you to the questionnaire...
+</p>
+
+<div className="mt-8">
+<a
+href="/assessment"
+className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white transition-transform duration-200 hover:scale-[1.01] hover:bg-gray-800"
+>
+Continue to questionnaire
+</a>
 </div>
+</div>
+</section>
+</main>
 );
 }
+
 
 
 
