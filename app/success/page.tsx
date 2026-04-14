@@ -4,12 +4,8 @@ import { useEffect } from "react";
 
 export default function SuccessPage() {
 useEffect(() => {
-document.cookie = "direction90_access=true; path=/";
-const timer = setTimeout(() => {
-window.location.href = "/assessment";
-}, 1200);
-
-return () => clearTimeout(timer);
+document.cookie = "direction90_access=true; path=/; max-age=86400; samesite=lax";
+window.location.replace("/assessment");
 }, []);
 
 return (
