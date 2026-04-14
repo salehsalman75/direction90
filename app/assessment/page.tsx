@@ -1,17 +1,26 @@
-import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
-import AssessmentForm from "@/components/AssessmentForm";
+"use client";
 
-export default async function AssessmentPage() {
-const cookieStore = await cookies();
-const accessCookie = cookieStore.get("direction90_access")?.value;
+import { useEffect } from "react";
 
-if (accessCookie !== "granted") {
-redirect("/checkout");
+export default function AssessmentPage() {
+useEffect(() => {
+const hasAccess = document.cookie.includes("direction90_access=true");
+
+if (!hasAccess) {
+window.location.href = "/checkout";
+}
+}, []);
+
+return (
+<main className="min-h-screen p-10">
+<h1 className="text-3xl font-bold">Assessment</h1>
+<p className="mt-4">This is your questionnaire.</p>
+</main>
+);
 }
 
-return <AssessmentForm />;
-}
+
+
 
 
 

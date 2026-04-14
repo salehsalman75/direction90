@@ -1,31 +1,40 @@
-export default function SuccessPage() {
-return (
-<div style={{
-height: "100vh",
-display: "flex",
-alignItems: "center",
-justifyContent: "center",
-flexDirection: "column",
-fontFamily: "sans-serif"
-}}>
-<h1>✅ Payment Successful</h1>
-<p>You now have access to Direction90.</p>
+"use client";
 
-<a
-href="/"
-style={{
-marginTop: "20px",
-padding: "10px 20px",
-background: "black",
-color: "white",
-borderRadius: "8px",
-textDecoration: "none"
-}}
->
-Go Home
-</a>
+import { useEffect } from "react";
+
+export default function SuccessPage() {
+useEffect(() => {
+const run = async () => {
+const params = new URLSearchParams(window.location.search);
+const email = params.get("email");
+
+if (!email) {
+window.location.href = "/checkout";
+return;
+}
+
+const res = await fetch(`/api/payment-status?email=${email}`);
+const data = await res.json();
+
+if (data.paid) {
+document.cookie = "direction90_access=true; path=/";
+window.location.href = "/assessment";
+} else {
+window.location.href = "/checkout";
+}
+};
+
+run();
+}, []);
+
+return (
+<div className="flex min-h-screen items-center justify-center">
+<p>Verifying payment...</p>
 </div>
 );
 }
+
+
+
 
 
