@@ -7,9 +7,18 @@ useEffect(() => {
 const run = async () => {
 try {
 const params = new URLSearchParams(window.location.search);
-const email = params.get("email");
+const email = params.get("email")?.trim().toLowerCase() || "";
 
-if (email) {
+if (!email) {
+window.location.replace("/checkout");
+return;
+}
+
+localStorage.setItem("direction90_email", email);
+
+document.cookie =
+"direction90_access=true; path=/; max-age=86400; samesite=lax";
+
 await fetch("/api/payment-success", {
 method: "POST",
 headers: {
@@ -17,14 +26,11 @@ headers: {
 },
 body: JSON.stringify({ email }),
 });
-}
-
-document.cookie =
-"direction90_access=true; path=/; max-age=86400; samesite=lax";
 
 window.location.replace("/assessment");
 } catch (error) {
 console.error("Success redirect error:", error);
+window.location.replace("/checkout");
 }
 };
 
@@ -48,22 +54,14 @@ Your payment was received successfully.
 </p>
 
 <p className="mt-2 text-base leading-8 text-gray-600 sm:text-lg">
-Redirecting you to the questionnaire...
+Redirecting you to the assessment...
 </p>
-
-<div className="mt-8">
-<a
-href="/assessment"
-className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white transition-transform duration-200 hover:scale-[1.01] hover:bg-gray-800"
->
-Continue to questionnaire
-</a>
-</div>
 </div>
 </section>
 </main>
 );
 }
+
 
 
 
