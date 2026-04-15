@@ -4,8 +4,31 @@ import { useEffect } from "react";
 
 export default function SuccessPage() {
 useEffect(() => {
-document.cookie = "direction90_access=true; path=/; max-age=86400; samesite=lax";
+const run = async () => {
+try {
+const params = new URLSearchParams(window.location.search);
+const email = params.get("email");
+
+if (email) {
+await fetch("/api/payment-success", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify({ email }),
+});
+}
+
+document.cookie =
+"direction90_access=true; path=/; max-age=86400; samesite=lax";
+
 window.location.replace("/assessment");
+} catch (error) {
+console.error("Success redirect error:", error);
+}
+};
+
+run();
 }, []);
 
 return (
@@ -41,6 +64,7 @@ Continue to questionnaire
 </main>
 );
 }
+
 
 
 
