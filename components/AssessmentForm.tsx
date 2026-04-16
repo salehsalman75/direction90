@@ -130,9 +130,14 @@ setIsSubmitting(true);
 setSubmitError("");
 
 try {
+const paymentEmail =
+localStorage.getItem("direction90_email")?.trim().toLowerCase() || "";
+const enteredEmail = email.trim().toLowerCase();
+
 const payload = {
 name: name.trim(),
-email: email.trim(),
+email: enteredEmail,
+paymentEmail,
 answers,
 submittedAt: new Date().toISOString(),
 };
@@ -145,8 +150,12 @@ headers: {
 body: JSON.stringify(payload),
 });
 
+const data = await response.json().catch(() => null);
+
 if (!response.ok) {
-throw new Error("Something went wrong while submitting your assessment.");
+throw new Error(
+data?.error || "Something went wrong while submitting your assessment."
+);
 }
 
 setIsSubmitted(true);
@@ -180,7 +189,9 @@ for report generation.
 </p>
 
 <div className="mt-10 rounded-3xl border border-gray-200 bg-gray-50 p-6">
-<h2 className="text-lg font-semibold text-gray-900">What happens next</h2>
+<h2 className="text-lg font-semibold text-gray-900">
+What happens next
+</h2>
 
 <div className="mt-4 space-y-3 text-gray-600">
 <p>01 — Your inputs are processed</p>
@@ -190,9 +201,7 @@ for report generation.
 </div>
 </div>
 
-<p className="mt-6 text-sm text-gray-500">
-Digital product delivery only.
-</p>
+<p className="mt-6 text-sm text-gray-500">Digital product delivery only.</p>
 </div>
 </div>
 </main>
@@ -248,7 +257,9 @@ Answer based on your current situation.
 )}
 
 <h2
-className={`${step === 0 ? "mt-14" : ""} text-2xl font-semibold tracking-tight sm:text-3xl`}
+className={`${
+step === 0 ? "mt-14" : ""
+} text-2xl font-semibold tracking-tight sm:text-3xl`}
 >
 {currentQuestion.title}
 </h2>
@@ -355,4 +366,3 @@ className="rounded-2xl bg-gray-950 px-8 py-4 font-semibold text-white transition
 </main>
 );
 }
-
