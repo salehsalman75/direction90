@@ -15,7 +15,9 @@ const body = (await req.json()) as AssessmentPayload;
 
 const name = String(body?.name || "").trim();
 const email = String(body?.email || "").trim().toLowerCase();
-const paymentEmail = String(body?.paymentEmail || "").trim().toLowerCase();
+const paymentEmail = String(body?.paymentEmail || "")
+.trim()
+.toLowerCase();
 const answers = body?.answers || {};
 const submittedAt = body?.submittedAt || new Date().toISOString();
 
@@ -23,13 +25,6 @@ if (!name || !email || !paymentEmail || Object.keys(answers).length === 0) {
 return NextResponse.json(
 { error: "Missing required assessment fields." },
 { status: 400 }
-);
-}
-
-if (email !== paymentEmail) {
-return NextResponse.json(
-{ error: "The report email must match the payment email." },
-{ status: 403 }
 );
 }
 
@@ -50,7 +45,7 @@ return NextResponse.json(
 
 if (!paymentRows || paymentRows.length === 0) {
 return NextResponse.json(
-{ error: "No paid access found for this email." },
+{ error: "No paid access found for this payment email." },
 { status: 403 }
 );
 }
@@ -114,7 +109,6 @@ return NextResponse.json(
 );
 }
 
-// نفس payload القديم + metadata إضافية
 const makePayload = {
 name,
 email,
@@ -154,3 +148,4 @@ return NextResponse.json(
 );
 }
 }
+
