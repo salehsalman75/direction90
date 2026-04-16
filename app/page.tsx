@@ -3,6 +3,16 @@ import Link from "next/link";
 export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
+
+{/* LOGO */}
+<div className="px-6 pt-6">
+<img
+src="/logo.svg"
+alt="Direction90"
+className="h-10 w-auto"
+/>
+</div>
+
 <section className="px-6 pt-24 pb-20">
 <div className="mx-auto max-w-6xl">
 <div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
