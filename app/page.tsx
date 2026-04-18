@@ -3,31 +3,25 @@ import Link from "next/link";
 export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
-{/* HEADER + LOGO */}
-<div className="mx-auto flex max-w-6xl items-center px-6 py-6">
-<svg
-width="48"
-height="48"
-viewBox="0 0 160 160"
-xmlns="http://www.w3.org/2000/svg"
-aria-label="Direction90 logo"
->
-<defs>
-<linearGradient id="direction90Logo" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0%" stopColor="#111827" />
-<stop offset="100%" stopColor="#374151" />
-</linearGradient>
-</defs>
-
-<rect width="160" height="160" rx="28" fill="url(#direction90Logo)" />
+{/* SINGLE LOGO ONLY */}
+<div className="mx-auto max-w-6xl px-6 py-6">
+<div className="flex items-center gap-3">
+<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-950">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
 <path
-d="M45 100 L100 45 M100 45 H70 M100 45 V75"
+d="M5 19L19 5M19 5H9M19 5V15"
 stroke="white"
-strokeWidth="12"
+strokeWidth="2.2"
 strokeLinecap="round"
 strokeLinejoin="round"
 />
 </svg>
+</div>
+
+<span className="text-xl font-semibold tracking-tight text-gray-950">
+Direction90
+</span>
+</div>
 </div>
 
 {/* HERO */}
@@ -147,7 +141,6 @@ engagement.
 </div>
 </section>
 
-{/* PAIN SECTION */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-4xl">
 <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
@@ -169,7 +162,6 @@ They just feel off.
 </div>
 </section>
 
-{/* WHY THIS EXISTS */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-5xl">
 <div className="max-w-3xl">
@@ -201,7 +193,6 @@ mental health advice.
 </div>
 </section>
 
-{/* WHAT THIS IS NOT */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-4xl">
 <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
@@ -226,7 +217,6 @@ inputs.
 </div>
 </section>
 
-{/* HOW IT WORKS */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-5xl">
 <div className="grid gap-12 lg:grid-cols-2">
@@ -301,7 +291,6 @@ self-review.
 </div>
 </section>
 
-{/* REPORT INCLUDES */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-5xl">
 <div className="rounded-[2rem] bg-gray-950 px-8 py-10 text-white sm:px-12 sm:py-14">
@@ -357,7 +346,6 @@ to be accurate or applicable to your situation.
 </div>
 </section>
 
-{/* FINAL CTA */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-4xl text-center">
 <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
@@ -396,5 +384,3 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
-
-
