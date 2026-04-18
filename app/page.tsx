@@ -4,11 +4,13 @@ export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
 {/* PREMIUM HEADER */}
-<header className="sticky top-0 z-50 border-b border-gray-200/80 bg-white/80 backdrop-blur-xl">
+{/* HEADER */}
+<header className="sticky top-0 z-50 border-b border-gray-200/70 bg-white/70 backdrop-blur-2xl">
 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+
 <div className="flex items-center gap-3">
-<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-950 shadow-sm">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-950 shadow-[0_4px_12px_rgba(0,0,0,0.15)]">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
 <path
 d="M5 19L19 5M19 5H9M19 5V15"
 stroke="white"
@@ -20,21 +22,25 @@ strokeLinejoin="round"
 </div>
 
 <div className="flex flex-col leading-none">
-<span className="text-[18px] font-semibold tracking-tight text-gray-950">
+<span className="text-[17px] font-semibold tracking-tight text-gray-950">
 Direction90
 </span>
-<span className="mt-1 text-[11px] uppercase tracking-[0.22em] text-gray-400">
-Structured clarity
+<span className="mt-[2px] text-[10px] uppercase tracking-[0.28em] text-gray-400">
+STRUCTURED CLARITY
 </span>
 </div>
 </div>
 
-<Link
+<a
 href="/checkout"
-className="inline-flex items-center justify-center rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-950 transition hover:border-gray-300 hover:bg-gray-50"
+className="group inline-flex items-center gap-2 rounded-xl bg-gray-950 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_6px_20px_rgba(0,0,0,0.18)] transition-all duration-200 hover:scale-[1.02] hover:bg-gray-800"
 >
-Start — $19
-</Link>
+Start
+<span className="text-white/70 group-hover:text-white">
+— $19
+</span>
+</a>
+
 </div>
 </header>
 
