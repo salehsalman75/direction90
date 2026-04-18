@@ -3,10 +3,11 @@ import Link from "next/link";
 export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
-{/* SINGLE LOGO ONLY */}
-<div className="mx-auto max-w-6xl px-6 py-6">
+{/* PREMIUM HEADER */}
+<header className="sticky top-0 z-50 border-b border-gray-200/80 bg-white/80 backdrop-blur-xl">
+<div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 <div className="flex items-center gap-3">
-<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-950">
+<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-950 shadow-sm">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
 <path
 d="M5 19L19 5M19 5H9M19 5V15"
@@ -18,14 +19,27 @@ strokeLinejoin="round"
 </svg>
 </div>
 
-<span className="text-xl font-semibold tracking-tight text-gray-950">
+<div className="flex flex-col leading-none">
+<span className="text-[18px] font-semibold tracking-tight text-gray-950">
 Direction90
+</span>
+<span className="mt-1 text-[11px] uppercase tracking-[0.22em] text-gray-400">
+Structured clarity
 </span>
 </div>
 </div>
 
+<Link
+href="/checkout"
+className="inline-flex items-center justify-center rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-950 transition hover:border-gray-300 hover:bg-gray-50"
+>
+Start — $19
+</Link>
+</div>
+</header>
+
 {/* HERO */}
-<section className="px-6 pb-20 pt-10">
+<section className="px-6 pb-20 pt-16">
 <div className="mx-auto max-w-6xl">
 <div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
 <div className="max-w-3xl">
@@ -67,13 +81,13 @@ Start Your Assessment — $19
 </div>
 </div>
 
-<div className="rounded-3xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+<div className="rounded-3xl border border-gray-200 bg-gray-50 p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)] sm:p-8">
 <p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
 What you get
 </p>
 
 <div className="mt-6 space-y-5">
-<div className="rounded-2xl bg-white p-5">
+<div className="rounded-2xl bg-white p-5 shadow-sm">
 <h2 className="text-base font-semibold text-gray-950">
 A structured report
 </h2>
@@ -83,7 +97,7 @@ in your responses.
 </p>
 </div>
 
-<div className="rounded-2xl bg-white p-5">
+<div className="rounded-2xl bg-white p-5 shadow-sm">
 <h2 className="text-base font-semibold text-gray-950">
 Clear pattern visibility
 </h2>
@@ -93,7 +107,7 @@ what may actually be happening in your current situation.
 </p>
 </div>
 
-<div className="rounded-2xl bg-white p-5">
+<div className="rounded-2xl bg-white p-5 shadow-sm">
 <h2 className="text-base font-semibold text-gray-950">
 Structured output
 </h2>
@@ -293,7 +307,7 @@ self-review.
 
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-5xl">
-<div className="rounded-[2rem] bg-gray-950 px-8 py-10 text-white sm:px-12 sm:py-14">
+<div className="rounded-[2rem] bg-gray-950 px-8 py-10 text-white shadow-[0_20px_60px_rgba(15,23,42,0.16)] sm:px-12 sm:py-14">
 <p className="text-sm font-medium uppercase tracking-[0.22em] text-white/60">
 What the report includes
 </p>
@@ -384,3 +398,4 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
+
