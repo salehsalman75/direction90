@@ -4,10 +4,10 @@ export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
 {/* PREMIUM HEADER */}
-<header className="sticky top-0 z-50 border-b border-gray-200/70 bg-white/70 backdrop-blur-2xl">
+<header className="sticky top-0 z-50 border-b border-gray-200/60 bg-white/75 backdrop-blur-xl">
 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 <div className="flex items-center gap-3">
-<div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-[0_6px_20px_rgba(0,0,0,0.25)]">
+<div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-950 via-gray-900 to-gray-700 shadow-[0_10px_30px_rgba(15,23,42,0.18)]">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
 <path
 d="M5 19L19 5M19 5H9M19 5V15"
@@ -31,30 +31,32 @@ STRUCTURED CLARITY
 
 <Link
 href="/checkout"
-className="group inline-flex items-center gap-2 rounded-xl bg-gray-950 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_6px_20px_rgba(0,0,0,0.18)] transition-all duration-200 hover:scale-[1.02] hover:bg-gray-800"
+className="group inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-950 shadow-[0_6px_24px_rgba(15,23,42,0.06)] transition-all duration-200 hover:-translate-y-[1px] hover:border-gray-300 hover:bg-gray-50"
 >
 Start
-<span className="text-white/70 group-hover:text-white">— $19</span>
+<span className="text-gray-400 transition-colors group-hover:text-gray-600">
+— $19
+</span>
 </Link>
 </div>
 </header>
 
 {/* HERO */}
-<section className="px-6 pb-20 pt-16">
+<section className="px-6 pb-24 pt-20">
 <div className="mx-auto max-w-6xl">
-<div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+<div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
 <div className="max-w-3xl">
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+<p className="text-sm font-medium uppercase tracking-[0.26em] text-gray-400">
 Direction90
 </p>
 
-<h1 className="mt-6 text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl">
+<h1 className="mt-6 text-5xl font-semibold leading-[0.98] tracking-tight text-gray-950 sm:text-6xl">
 You don’t know if your role is working.
 <br className="hidden sm:block" />
 This shows you what it’s actually doing.
 </h1>
 
-<p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl">
+<p className="mt-7 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl">
 Direction90 turns your submitted responses into a structured read
 of your current situation, so you can see whether your role is
 creating leverage, friction, stagnation, or misalignment.
@@ -68,13 +70,13 @@ Just a structured digital output built from your own signals.
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
 <Link
 href="/checkout"
-className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white transition-transform duration-200 hover:scale-[1.01] hover:bg-gray-800"
+className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_12px_30px_rgba(15,23,42,0.18)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
 >
 Start Your Assessment — $19
 </Link>
 </div>
 
-<div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-500">
+<div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-500">
 <span>Private</span>
 <span>Structured</span>
 <span>Built from your inputs</span>
@@ -82,13 +84,13 @@ Start Your Assessment — $19
 </div>
 </div>
 
-<div className="rounded-3xl border border-gray-200 bg-gray-50 p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)] sm:p-8">
+<div className="rounded-[2rem] border border-gray-200 bg-gradient-to-b from-gray-50 to-white p-6 shadow-[0_20px_60px_rgba(15,23,42,0.05)] sm:p-8">
 <p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
 What you get
 </p>
 
 <div className="mt-6 space-y-5">
-<div className="rounded-2xl bg-white p-5 shadow-sm">
+<div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
 <h2 className="text-base font-semibold text-gray-950">
 A structured report
 </h2>
@@ -98,7 +100,7 @@ in your responses.
 </p>
 </div>
 
-<div className="rounded-2xl bg-white p-5 shadow-sm">
+<div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
 <h2 className="text-base font-semibold text-gray-950">
 Clear pattern visibility
 </h2>
@@ -108,7 +110,7 @@ what may actually be happening in your current situation.
 </p>
 </div>
 
-<div className="rounded-2xl bg-white p-5 shadow-sm">
+<div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
 <h2 className="text-base font-semibold text-gray-950">
 Structured output
 </h2>
@@ -122,7 +124,7 @@ generated output based on your submitted inputs.
 </div>
 
 <div className="mt-24 grid gap-6 md:grid-cols-3">
-<div className="rounded-3xl border border-gray-200 p-7">
+<div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]">
 <p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
 For people who
 </p>
@@ -132,7 +134,7 @@ unclear, stuck, or difficult to interpret.
 </p>
 </div>
 
-<div className="rounded-3xl border border-gray-200 p-7">
+<div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]">
 <p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
 For situations where
 </p>
@@ -142,7 +144,7 @@ tell whether it is creating leverage, stagnation, or friction.
 </p>
 </div>
 
-<div className="rounded-3xl border border-gray-200 p-7">
+<div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]">
 <p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
 For buyers who want
 </p>
@@ -157,19 +159,19 @@ engagement.
 </section>
 
 {/* PAIN */}
-<section className="border-t border-gray-200 px-6 py-20">
+<section className="border-t border-gray-200 px-6 py-24">
 <div className="mx-auto max-w-4xl">
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
 You might already feel it
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
+<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 The hardest situations are not clearly bad.
 <br className="hidden sm:block" />
 They just feel off.
 </h2>
 
-<div className="mt-8 space-y-4 text-lg leading-8 text-gray-600">
+<div className="mt-10 space-y-5 text-lg leading-8 text-gray-600">
 <p>• The role looks fine, but doesn’t feel right.</p>
 <p>• You are not sure if you are progressing or just staying busy.</p>
 <p>• You can’t tell if the issue is temporary or structural.</p>
@@ -179,14 +181,14 @@ They just feel off.
 </section>
 
 {/* WHY THIS EXISTS */}
-<section className="border-t border-gray-200 px-6 py-20">
+<section className="border-t border-gray-200 px-6 py-24">
 <div className="mx-auto max-w-5xl">
 <div className="max-w-3xl">
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
 Why this exists
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
+<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 It is hard to evaluate your own situation
 <br className="hidden sm:block" />
 when everything feels mixed.
@@ -209,13 +211,13 @@ mental health advice.
 </section>
 
 {/* WHAT THIS IS NOT */}
-<section className="border-t border-gray-200 px-6 py-20">
+<section className="border-t border-gray-200 px-6 py-24">
 <div className="mx-auto max-w-4xl">
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
 What this is not
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
+<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 This is not coaching.
 </h2>
 
@@ -234,14 +236,14 @@ inputs.
 </section>
 
 {/* HOW IT WORKS */}
-<section className="border-t border-gray-200 px-6 py-20">
+<section className="border-t border-gray-200 px-6 py-24">
 <div className="mx-auto max-w-5xl">
 <div className="grid gap-12 lg:grid-cols-2">
 <div>
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
 How it works
 </p>
-<h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
+<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 A simple online flow.
 <br />
 A structured output.
@@ -309,15 +311,15 @@ self-review.
 </section>
 
 {/* REPORT INCLUDES */}
-<section className="border-t border-gray-200 px-6 py-20">
+<section className="border-t border-gray-200 px-6 py-24">
 <div className="mx-auto max-w-5xl">
-<div className="rounded-[2rem] bg-gray-950 px-8 py-10 text-white shadow-[0_20px_60px_rgba(15,23,42,0.16)] sm:px-12 sm:py-14">
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-white/60">
+<div className="rounded-[2.25rem] bg-gradient-to-br from-gray-950 via-slate-900 to-gray-900 px-8 py-10 text-white shadow-[0_30px_80px_rgba(15,23,42,0.22)] sm:px-12 sm:py-14">
+<p className="text-sm font-medium uppercase tracking-[0.24em] text-white/60">
 What the report includes
 </p>
 
 <div className="mt-8 grid gap-6 md:grid-cols-2">
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Headline</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 A generated framing of the situation based on your submitted
@@ -325,7 +327,7 @@ responses.
 </p>
 </div>
 
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Summary</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 A structured explanation of possible patterns reflected in
@@ -333,7 +335,7 @@ your inputs.
 </p>
 </div>
 
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Signal breakdown</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 Organized sections that show how your submitted responses
@@ -341,7 +343,7 @@ relate to the generated report.
 </p>
 </div>
 
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Online delivery</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 A report generated after completion and delivered
@@ -365,13 +367,13 @@ to be accurate or applicable to your situation.
 </section>
 
 {/* FINAL CTA */}
-<section className="border-t border-gray-200 px-6 py-20">
+<section className="border-t border-gray-200 px-6 py-24">
 <div className="mx-auto max-w-4xl text-center">
-<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
 Final call
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-5xl">
+<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 Start Direction90 if you want
 <br className="hidden sm:block" />a clearer read of your situation.
 </h2>
@@ -384,7 +386,7 @@ report based on your submitted responses.
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
 <Link
 href="/checkout"
-className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white transition-transform duration-200 hover:scale-[1.01] hover:bg-gray-800"
+className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_14px_32px_rgba(15,23,42,0.16)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
 >
 Start Your Assessment — $19
 </Link>
@@ -402,5 +404,8 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
+
+
+
 
 
