@@ -31,7 +31,7 @@ STRUCTURED CLARITY
 
 <Link
 href="/checkout"
-className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-950 transition-all duration-200 hover:border-gray-300 hover:bg-gray-50"
+className="inline-flex items-center justify-center rounded-full bg-gray-950 px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(0,0,0,0.2)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
 >
 Start — $19
 </Link>
