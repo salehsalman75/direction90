@@ -4,17 +4,15 @@ export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
 {/* PREMIUM HEADER */}
-{/* HEADER */}
 <header className="sticky top-0 z-50 border-b border-gray-200/70 bg-white/70 backdrop-blur-2xl">
 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-
 <div className="flex items-center gap-3">
-<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-950 shadow-[0_4px_12px_rgba(0,0,0,0.15)]">
+<div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-[0_6px_20px_rgba(0,0,0,0.25)]">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
 <path
 d="M5 19L19 5M19 5H9M19 5V15"
 stroke="white"
-strokeWidth="2.2"
+strokeWidth="2.4"
 strokeLinecap="round"
 strokeLinejoin="round"
 />
@@ -22,25 +20,22 @@ strokeLinejoin="round"
 </div>
 
 <div className="flex flex-col leading-none">
-<span className="text-[17px] font-semibold tracking-tight text-gray-950">
+<span className="text-[18px] font-semibold tracking-tight text-gray-950">
 Direction90
 </span>
-<span className="mt-[2px] text-[10px] uppercase tracking-[0.28em] text-gray-400">
+<span className="mt-[3px] text-[10px] uppercase tracking-[0.35em] text-gray-400">
 STRUCTURED CLARITY
 </span>
 </div>
 </div>
 
-<a
+<Link
 href="/checkout"
 className="group inline-flex items-center gap-2 rounded-xl bg-gray-950 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_6px_20px_rgba(0,0,0,0.18)] transition-all duration-200 hover:scale-[1.02] hover:bg-gray-800"
 >
 Start
-<span className="text-white/70 group-hover:text-white">
-— $19
-</span>
-</a>
-
+<span className="text-white/70 group-hover:text-white">— $19</span>
+</Link>
 </div>
 </header>
 
@@ -161,6 +156,7 @@ engagement.
 </div>
 </section>
 
+{/* PAIN */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-4xl">
 <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
@@ -182,6 +178,7 @@ They just feel off.
 </div>
 </section>
 
+{/* WHY THIS EXISTS */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-5xl">
 <div className="max-w-3xl">
@@ -196,9 +193,7 @@ when everything feels mixed.
 </h2>
 
 <div className="mt-8 space-y-5 text-lg leading-8 text-gray-600">
-<p>
-Sometimes a role looks fine on paper but unclear in practice.
-</p>
+<p>Sometimes a role looks fine on paper but unclear in practice.</p>
 <p>Sometimes the issue is temporary. Sometimes it is structural.</p>
 <p>
 Direction90 is designed as a structured online product that
@@ -213,6 +208,7 @@ mental health advice.
 </div>
 </section>
 
+{/* WHAT THIS IS NOT */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-4xl">
 <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
@@ -237,6 +233,7 @@ inputs.
 </div>
 </section>
 
+{/* HOW IT WORKS */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-5xl">
 <div className="grid gap-12 lg:grid-cols-2">
@@ -311,6 +308,7 @@ self-review.
 </div>
 </section>
 
+{/* REPORT INCLUDES */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-5xl">
 <div className="rounded-[2rem] bg-gray-950 px-8 py-10 text-white shadow-[0_20px_60px_rgba(15,23,42,0.16)] sm:px-12 sm:py-14">
@@ -366,6 +364,7 @@ to be accurate or applicable to your situation.
 </div>
 </section>
 
+{/* FINAL CTA */}
 <section className="border-t border-gray-200 px-6 py-20">
 <div className="mx-auto max-w-4xl text-center">
 <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
@@ -374,8 +373,7 @@ Final call
 
 <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-5xl">
 Start Direction90 if you want
-<br className="hidden sm:block" />
-a clearer read of your situation.
+<br className="hidden sm:block" />a clearer read of your situation.
 </h2>
 
 <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
@@ -404,4 +402,5 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
+
 
