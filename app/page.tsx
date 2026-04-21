@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
-{/* PREMIUM HEADER */}
-<header className="sticky top-0 z-50 border-b border-gray-200/60 bg-white/75 backdrop-blur-xl">
+{/* HEADER */}
+<header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-xl">
 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 <div className="flex items-center gap-3">
-<div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-950 via-gray-900 to-gray-700 shadow-[0_10px_30px_rgba(15,23,42,0.18)]">
+<div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-950 to-gray-700 shadow-[0_10px_30px_rgba(15,23,42,0.16)]">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
 <path
 d="M5 19L19 5M19 5H9M19 5V15"
@@ -23,7 +23,7 @@ strokeLinejoin="round"
 <span className="text-[18px] font-semibold tracking-tight text-gray-950">
 Direction90
 </span>
-<span className="mt-[3px] text-[10px] uppercase tracking-[0.35em] text-gray-400">
+<span className="mt-[3px] text-[10px] uppercase tracking-[0.34em] text-gray-400">
 STRUCTURED CLARITY
 </span>
 </div>
@@ -31,26 +31,23 @@ STRUCTURED CLARITY
 
 <Link
 href="/checkout"
-className="group inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-950 shadow-[0_6px_24px_rgba(15,23,42,0.06)] transition-all duration-200 hover:-translate-y-[1px] hover:border-gray-300 hover:bg-gray-50"
+className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-950 transition-all duration-200 hover:border-gray-300 hover:bg-gray-50"
 >
-Start
-<span className="text-gray-400 transition-colors group-hover:text-gray-600">
-— $19
-</span>
+Start — $19
 </Link>
 </div>
 </header>
 
 {/* HERO */}
-<section className="px-6 pb-24 pt-20">
+<section className="px-6 pb-24 pt-20 sm:pb-28 sm:pt-24">
 <div className="mx-auto max-w-6xl">
-<div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+<div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
 <div className="max-w-3xl">
-<p className="text-sm font-medium uppercase tracking-[0.26em] text-gray-400">
+<p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
 Direction90
 </p>
 
-<h1 className="mt-6 text-5xl font-semibold leading-[0.98] tracking-tight text-gray-950 sm:text-6xl">
+<h1 className="mt-6 text-5xl font-semibold leading-[0.96] tracking-tight text-gray-950 sm:text-6xl">
 You don’t know if your role is working.
 <br className="hidden sm:block" />
 This shows you what it’s actually doing.
@@ -70,7 +67,7 @@ Just a structured digital output built from your own signals.
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
 <Link
 href="/checkout"
-className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_12px_30px_rgba(15,23,42,0.18)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
+className="inline-flex items-center justify-center rounded-full bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_14px_34px_rgba(15,23,42,0.18)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
 >
 Start Your Assessment — $19
 </Link>
@@ -84,14 +81,14 @@ Start Your Assessment — $19
 </div>
 </div>
 
-<div className="rounded-[2rem] border border-gray-200 bg-gradient-to-b from-gray-50 to-white p-6 shadow-[0_20px_60px_rgba(15,23,42,0.05)] sm:p-8">
-<p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
+<div className="rounded-[2rem] border border-gray-200/80 bg-white p-6 shadow-[0_20px_50px_rgba(15,23,42,0.06)] sm:p-8">
+<p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-400">
 What you get
 </p>
 
-<div className="mt-6 space-y-5">
-<div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
-<h2 className="text-base font-semibold text-gray-950">
+<div className="mt-8 space-y-6">
+<div className="border-b border-gray-100 pb-6 last:border-b-0 last:pb-0">
+<h2 className="text-lg font-semibold text-gray-950">
 A structured report
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
@@ -100,8 +97,8 @@ in your responses.
 </p>
 </div>
 
-<div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
-<h2 className="text-base font-semibold text-gray-950">
+<div className="border-b border-gray-100 pb-6 last:border-b-0 last:pb-0">
+<h2 className="text-lg font-semibold text-gray-950">
 Clear pattern visibility
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
@@ -110,8 +107,8 @@ what may actually be happening in your current situation.
 </p>
 </div>
 
-<div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
-<h2 className="text-base font-semibold text-gray-950">
+<div>
+<h2 className="text-lg font-semibold text-gray-950">
 Structured output
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
@@ -124,8 +121,8 @@ generated output based on your submitted inputs.
 </div>
 
 <div className="mt-24 grid gap-6 md:grid-cols-3">
-<div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]">
-<p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
+<div className="rounded-[2rem] border border-gray-200/80 bg-white p-7">
+<p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
 For people who
 </p>
 <p className="mt-4 text-lg leading-8 text-gray-800">
@@ -134,8 +131,8 @@ unclear, stuck, or difficult to interpret.
 </p>
 </div>
 
-<div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]">
-<p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
+<div className="rounded-[2rem] border border-gray-200/80 bg-white p-7">
+<p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
 For situations where
 </p>
 <p className="mt-4 text-lg leading-8 text-gray-800">
@@ -144,8 +141,8 @@ tell whether it is creating leverage, stagnation, or friction.
 </p>
 </div>
 
-<div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.03)]">
-<p className="text-sm font-medium uppercase tracking-[0.18em] text-gray-500">
+<div className="rounded-[2rem] border border-gray-200/80 bg-white p-7">
+<p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
 For buyers who want
 </p>
 <p className="mt-4 text-lg leading-8 text-gray-800">
@@ -159,9 +156,9 @@ engagement.
 </section>
 
 {/* PAIN */}
-<section className="border-t border-gray-200 px-6 py-24">
+<section className="border-t border-gray-200/80 px-6 py-24">
 <div className="mx-auto max-w-4xl">
-<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
+<p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
 You might already feel it
 </p>
 
@@ -181,10 +178,10 @@ They just feel off.
 </section>
 
 {/* WHY THIS EXISTS */}
-<section className="border-t border-gray-200 px-6 py-24">
+<section className="border-t border-gray-200/80 px-6 py-24">
 <div className="mx-auto max-w-5xl">
 <div className="max-w-3xl">
-<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
+<p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
 Why this exists
 </p>
 
@@ -211,9 +208,9 @@ mental health advice.
 </section>
 
 {/* WHAT THIS IS NOT */}
-<section className="border-t border-gray-200 px-6 py-24">
+<section className="border-t border-gray-200/80 px-6 py-24">
 <div className="mx-auto max-w-4xl">
-<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
+<p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
 What this is not
 </p>
 
@@ -236,11 +233,11 @@ inputs.
 </section>
 
 {/* HOW IT WORKS */}
-<section className="border-t border-gray-200 px-6 py-24">
+<section className="border-t border-gray-200/80 px-6 py-24">
 <div className="mx-auto max-w-5xl">
 <div className="grid gap-12 lg:grid-cols-2">
 <div>
-<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
+<p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
 How it works
 </p>
 <h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
@@ -251,7 +248,7 @@ A structured output.
 </div>
 
 <div className="space-y-8">
-<div>
+<div className="border-b border-gray-100 pb-8">
 <p className="text-sm font-medium text-gray-400">01</p>
 <h3 className="mt-2 text-xl font-semibold text-gray-950">
 You purchase access
@@ -262,7 +259,7 @@ flow.
 </p>
 </div>
 
-<div>
+<div className="border-b border-gray-100 pb-8">
 <p className="text-sm font-medium text-gray-400">02</p>
 <h3 className="mt-2 text-xl font-semibold text-gray-950">
 You complete the questionnaire
@@ -273,7 +270,7 @@ concerns, expectations, and likely near-term outlook.
 </p>
 </div>
 
-<div>
+<div className="border-b border-gray-100 pb-8">
 <p className="text-sm font-medium text-gray-400">03</p>
 <h3 className="mt-2 text-xl font-semibold text-gray-950">
 Your report is generated
@@ -284,7 +281,7 @@ structured report.
 </p>
 </div>
 
-<div>
+<div className="border-b border-gray-100 pb-8">
 <p className="text-sm font-medium text-gray-400">04</p>
 <h3 className="mt-2 text-xl font-semibold text-gray-950">
 You receive the output
@@ -311,15 +308,15 @@ self-review.
 </section>
 
 {/* REPORT INCLUDES */}
-<section className="border-t border-gray-200 px-6 py-24">
+<section className="border-t border-gray-200/80 px-6 py-24">
 <div className="mx-auto max-w-5xl">
-<div className="rounded-[2.25rem] bg-gradient-to-br from-gray-950 via-slate-900 to-gray-900 px-8 py-10 text-white shadow-[0_30px_80px_rgba(15,23,42,0.22)] sm:px-12 sm:py-14">
-<p className="text-sm font-medium uppercase tracking-[0.24em] text-white/60">
+<div className="rounded-[2.5rem] bg-gradient-to-br from-gray-950 via-slate-900 to-gray-900 px-8 py-10 text-white shadow-[0_30px_90px_rgba(15,23,42,0.24)] sm:px-12 sm:py-14">
+<p className="text-sm font-medium uppercase tracking-[0.28em] text-white/60">
 What the report includes
 </p>
 
 <div className="mt-8 grid gap-6 md:grid-cols-2">
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+<div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Headline</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 A generated framing of the situation based on your submitted
@@ -327,7 +324,7 @@ responses.
 </p>
 </div>
 
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+<div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Summary</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 A structured explanation of possible patterns reflected in
@@ -335,7 +332,7 @@ your inputs.
 </p>
 </div>
 
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+<div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Signal breakdown</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 Organized sections that show how your submitted responses
@@ -343,7 +340,7 @@ relate to the generated report.
 </p>
 </div>
 
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+<div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Online delivery</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
 A report generated after completion and delivered
@@ -367,9 +364,9 @@ to be accurate or applicable to your situation.
 </section>
 
 {/* FINAL CTA */}
-<section className="border-t border-gray-200 px-6 py-24">
+<section className="border-t border-gray-200/80 px-6 py-24">
 <div className="mx-auto max-w-4xl text-center">
-<p className="text-sm font-medium uppercase tracking-[0.24em] text-gray-400">
+<p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
 Final call
 </p>
 
@@ -386,7 +383,7 @@ report based on your submitted responses.
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
 <Link
 href="/checkout"
-className="inline-flex items-center justify-center rounded-2xl bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_14px_32px_rgba(15,23,42,0.16)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
+className="inline-flex items-center justify-center rounded-full bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_16px_36px_rgba(15,23,42,0.16)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
 >
 Start Your Assessment — $19
 </Link>
@@ -404,7 +401,6 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
-
 
 
 
