@@ -44,24 +44,24 @@ Start — $19
 <div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
 <div className="max-w-3xl">
 <p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
-Direction90
+Clarity before career decisions
 </p>
 
 <h1 className="mt-6 text-5xl font-semibold leading-[0.96] tracking-tight text-gray-950 sm:text-6xl">
-You don’t know if your role is working.
+You don’t hate your job.
 <br className="hidden sm:block" />
-This shows you what it’s actually doing.
+You just don’t know if you should stay.
 </h1>
 
 <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl">
 Direction90 turns your submitted responses into a structured read
-of your current situation, so you can see whether your role is
-creating leverage, friction, stagnation, or misalignment.
+of your current role, so you can see whether it is creating
+momentum, friction, stagnation, or misalignment.
 </p>
 
 <p className="mt-4 max-w-2xl text-base leading-7 text-gray-500 sm:text-lg">
 No vague coaching. No open-ended calls. No human consulting.
-Just a structured digital output built from your own signals.
+Just a private digital report built from your own signals.
 </p>
 
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -69,7 +69,7 @@ Just a structured digital output built from your own signals.
 href="/checkout"
 className="inline-flex items-center justify-center rounded-full bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_14px_34px_rgba(15,23,42,0.18)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
 >
-Start Your Assessment — $19
+Get your answer — $19
 </Link>
 </div>
 
@@ -89,31 +89,31 @@ What you get
 <div className="mt-8 space-y-6">
 <div className="border-b border-gray-100 pb-6 last:border-b-0 last:pb-0">
 <h2 className="text-lg font-semibold text-gray-950">
-A structured report
+A clearer direction
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
-A formatted output generated from the information you submit
-in your responses.
+A structured read on whether your current role looks like
+progress, stagnation, friction, or misalignment.
 </p>
 </div>
 
 <div className="border-b border-gray-100 pb-6 last:border-b-0 last:pb-0">
 <h2 className="text-lg font-semibold text-gray-950">
-Clear pattern visibility
+Pattern visibility
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
-The report organizes your signals into a clearer view of
-what may actually be happening in your current situation.
+The report organizes your signals into a clearer view of what
+may actually be happening in your current situation.
 </p>
 </div>
 
 <div>
 <h2 className="text-lg font-semibold text-gray-950">
-Structured output
+Private structured output
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
-You receive organized sections, signal summaries, and
-generated output based on your submitted inputs.
+You receive organized sections, signal summaries, and a final
+read based on your submitted inputs.
 </p>
 </div>
 </div>
@@ -126,8 +126,8 @@ generated output based on your submitted inputs.
 For people who
 </p>
 <p className="mt-4 text-lg leading-8 text-gray-800">
-want a more structured way to review a work situation that feels
-unclear, stuck, or difficult to interpret.
+feel stuck in a work situation but cannot clearly tell if the
+issue is temporary, structural, or fear of moving.
 </p>
 </div>
 
@@ -136,8 +136,8 @@ unclear, stuck, or difficult to interpret.
 For situations where
 </p>
 <p className="mt-4 text-lg leading-8 text-gray-800">
-the role is not obviously broken, but it is also not easy to
-tell whether it is creating leverage, stagnation, or friction.
+the role is not obviously broken, but it is also not clearly
+building momentum, confidence, or direction.
 </p>
 </div>
 
@@ -146,9 +146,8 @@ tell whether it is creating leverage, stagnation, or friction.
 For buyers who want
 </p>
 <p className="mt-4 text-lg leading-8 text-gray-800">
-a structured report that organizes their submitted responses
-into a clearer perspective, not an open-ended coaching
-engagement.
+a private structured report before making a career decision from
+confusion, pressure, or overthinking.
 </p>
 </div>
 </div>
@@ -165,14 +164,14 @@ You might already feel it
 <h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 The hardest situations are not clearly bad.
 <br className="hidden sm:block" />
-They just feel off.
+They just keep you unsure.
 </h2>
 
 <div className="mt-10 space-y-5 text-lg leading-8 text-gray-600">
 <p>• The role looks fine, but doesn’t feel right.</p>
-<p>• You are not sure if you are progressing or just staying busy.</p>
-<p>• You can’t tell if the issue is temporary or structural.</p>
-<p>• Something feels wrong, but you can’t explain it clearly.</p>
+<p>• You are busy, but not sure you are moving forward.</p>
+<p>• You keep giving it more time without knowing why.</p>
+<p>• You can’t tell if staying is patience or avoidance.</p>
 </div>
 </div>
 </section>
@@ -188,12 +187,19 @@ Why this exists
 <h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 It is hard to evaluate your own situation
 <br className="hidden sm:block" />
-when everything feels mixed.
+when the signals are mixed.
 </h2>
 
 <div className="mt-8 space-y-5 text-lg leading-8 text-gray-600">
-<p>Sometimes a role looks fine on paper but unclear in practice.</p>
-<p>Sometimes the issue is temporary. Sometimes it is structural.</p>
+<p>
+Sometimes a role gives you income, stability, and experience
+while still not giving you direction.
+</p>
+<p>
+Sometimes the issue is temporary. Sometimes it is structural.
+Sometimes the real issue is that waiting has started to feel
+safer than deciding.
+</p>
 <p>
 Direction90 is designed as a structured online product that
 helps surface those patterns from your own submitted responses.
@@ -371,13 +377,14 @@ Final call
 </p>
 
 <h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
-Start Direction90 if you want
-<br className="hidden sm:block" />a clearer read of your situation.
+You already feel something is off.
+<br className="hidden sm:block" />
+Direction90 helps you read it clearly.
 </h2>
 
 <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-You will complete the questionnaire first, then receive a generated
-report based on your submitted responses.
+Complete the questionnaire and receive a generated report based on
+your submitted responses.
 </p>
 
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
@@ -385,7 +392,7 @@ report based on your submitted responses.
 href="/checkout"
 className="inline-flex items-center justify-center rounded-full bg-gray-950 px-8 py-4 text-base font-semibold text-white shadow-[0_16px_36px_rgba(15,23,42,0.16)] transition-all duration-200 hover:-translate-y-[1px] hover:bg-gray-800"
 >
-Start Your Assessment — $19
+Get your answer — $19
 </Link>
 </div>
 
@@ -401,6 +408,13 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
+
+
+
+
+
+
+
 
 
 
