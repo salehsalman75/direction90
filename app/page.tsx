@@ -4,7 +4,7 @@ export default function HomePage() {
 return (
 <main className="min-h-screen bg-white text-gray-950">
 {/* HEADER */}
-<header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-xl">
+<header className="sticky top-0 z-50 border-b border-black/5 bg-white/85 backdrop-blur-xl">
 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 <div className="flex items-center gap-3">
 <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-950 to-gray-700 shadow-[0_10px_30px_rgba(15,23,42,0.16)]">
@@ -39,7 +39,7 @@ Start — $19
 </header>
 
 {/* HERO */}
-<section className="px-6 pb-24 pt-20 sm:pb-28 sm:pt-24">
+<section className="px-6 pb-24 pt-16 sm:pb-28 sm:pt-24">
 <div className="mx-auto max-w-6xl">
 <div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
 <div className="max-w-3xl">
@@ -47,10 +47,11 @@ Start — $19
 Clarity before career decisions
 </p>
 
-<h1 className="mt-6 text-5xl font-semibold leading-[0.96] tracking-tight text-gray-950 sm:text-6xl">
-You don’t hate your job.
-<br className="hidden sm:block" />
+<h1 className="mt-6 text-[52px] font-semibold leading-[0.96] tracking-tight text-gray-950 sm:text-6xl">
+<span className="block">You don’t hate your job.</span>
+<span className="block">
 You just don’t know if you should stay.
+</span>
 </h1>
 
 <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl">
@@ -87,7 +88,7 @@ What you get
 </p>
 
 <div className="mt-8 space-y-6">
-<div className="border-b border-gray-100 pb-6 last:border-b-0 last:pb-0">
+<div className="border-b border-gray-100 pb-6">
 <h2 className="text-lg font-semibold text-gray-950">
 A clearer direction
 </h2>
@@ -97,13 +98,13 @@ progress, stagnation, friction, or misalignment.
 </p>
 </div>
 
-<div className="border-b border-gray-100 pb-6 last:border-b-0 last:pb-0">
+<div className="border-b border-gray-100 pb-6">
 <h2 className="text-lg font-semibold text-gray-950">
 Pattern visibility
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
-The report organizes your signals into a clearer view of what
-may actually be happening in your current situation.
+The report organizes your signals into a clearer view of
+what may actually be happening in your current situation.
 </p>
 </div>
 
@@ -112,8 +113,8 @@ may actually be happening in your current situation.
 Private structured output
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
-You receive organized sections, signal summaries, and a final
-read based on your submitted inputs.
+You receive organized sections, signal summaries, and a
+final read based on your submitted inputs.
 </p>
 </div>
 </div>
@@ -161,10 +162,11 @@ confusion, pressure, or overthinking.
 You might already feel it
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+<h2 className="mt-5 text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+<span className="block">
 The hardest situations are not clearly bad.
-<br className="hidden sm:block" />
-They just keep you unsure.
+</span>
+<span className="block">They just keep you unsure.</span>
 </h2>
 
 <div className="mt-10 space-y-5 text-lg leading-8 text-gray-600">
@@ -184,10 +186,11 @@ They just keep you unsure.
 Why this exists
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+<h2 className="mt-5 text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+<span className="block">
 It is hard to evaluate your own situation
-<br className="hidden sm:block" />
-when the signals are mixed.
+</span>
+<span className="block">when the signals are mixed.</span>
 </h2>
 
 <div className="mt-8 space-y-5 text-lg leading-8 text-gray-600">
@@ -220,7 +223,7 @@ mental health advice.
 What this is not
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+<h2 className="mt-5 text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
 This is not coaching.
 </h2>
 
@@ -246,10 +249,10 @@ inputs.
 <p className="text-sm font-medium uppercase tracking-[0.28em] text-gray-400">
 How it works
 </p>
-<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
-A simple online flow.
-<br />
-A structured output.
+
+<h2 className="mt-5 text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+<span className="block">A simple online flow.</span>
+<span className="block">A structured output.</span>
 </h2>
 </div>
 
@@ -355,16 +358,18 @@ electronically.
 </div>
 </div>
 
-<p className="mt-8 text-sm leading-7 text-white/75">
+<div className="mt-8 space-y-4 text-sm leading-7 text-white/55">
+<p>
 Direction90 is an informational online product. It does not
 provide human consulting, coaching, therapy, legal advice,
 financial advice, medical advice, or guaranteed outcomes.
 </p>
 
-<p className="mt-4 text-sm leading-7 text-white/75">
-Results are generated based on your inputs and are not guaranteed
-to be accurate or applicable to your situation.
+<p>
+Results are generated based on your inputs and are not
+guaranteed to be accurate or applicable to your situation.
 </p>
+</div>
 </div>
 </div>
 </section>
@@ -376,10 +381,9 @@ to be accurate or applicable to your situation.
 Final call
 </p>
 
-<h2 className="mt-5 text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
-You already feel something is off.
-<br className="hidden sm:block" />
-Direction90 helps you read it clearly.
+<h2 className="mt-5 text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+<span className="block">You already feel something is off.</span>
+<span className="block">Direction90 helps you read it clearly.</span>
 </h2>
 
 <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
@@ -396,11 +400,11 @@ Get your answer — $19
 </Link>
 </div>
 
-<p className="mt-5 text-sm text-gray-500">
+<p className="mt-5 text-xs leading-6 text-gray-400">
 Informational online product only. Not professional advice.
 </p>
 
-<p className="mt-3 text-sm text-gray-500">
+<p className="mt-2 text-xs leading-6 text-gray-400">
 Refunds are handled according to our refund policy.
 </p>
 </div>
@@ -408,14 +412,3 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
-
-
-
-
-
-
-
-
-
-
-
