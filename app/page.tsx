@@ -39,7 +39,7 @@ Start — $19
 </header>
 
 {/* HERO */}
-<section className="px-6 pb-24 pt-16 sm:pb-28 sm:pt-24">
+<section className="px-6 pb-20 pt-14 sm:pb-28 sm:pt-24">
 <div className="mx-auto max-w-6xl">
 <div className="grid gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
 <div className="max-w-3xl">
@@ -47,7 +47,7 @@ Start — $19
 Clarity before career decisions
 </p>
 
-<h1 className="mt-6 text-[52px] font-semibold leading-[0.96] tracking-tight text-gray-950 sm:text-6xl">
+<h1 className="mt-6 text-[42px] font-semibold leading-[0.98] tracking-tight text-gray-950 sm:text-6xl">
 <span className="block">You don’t hate your job.</span>
 <span className="block">
 You just don’t know if you should stay.
@@ -55,9 +55,9 @@ You just don’t know if you should stay.
 </h1>
 
 <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl">
-Direction90 turns your submitted responses into a structured read
-of your current role, so you can see whether it is creating
-momentum, friction, stagnation, or misalignment.
+Direction90 turns your answers into a structured read of your
+current role, so you can see whether it is creating momentum,
+friction, stagnation, or misalignment.
 </p>
 
 <p className="mt-4 max-w-2xl text-base leading-7 text-gray-500 sm:text-lg">
@@ -114,7 +114,7 @@ Private structured output
 </h2>
 <p className="mt-2 text-sm leading-7 text-gray-600">
 You receive organized sections, signal summaries, and a
-final read based on your submitted inputs.
+final read based on your inputs.
 </p>
 </div>
 </div>
@@ -205,7 +205,7 @@ safer than deciding.
 </p>
 <p>
 Direction90 is designed as a structured online product that
-helps surface those patterns from your own submitted responses.
+helps surface those patterns from your own answers.
 </p>
 <p>
 It does not replace professional, legal, financial, medical, or
@@ -274,7 +274,7 @@ flow.
 You complete the questionnaire
 </h3>
 <p className="mt-2 leading-8 text-gray-600">
-You provide your responses about your current role, signals,
+You provide your answers about your current role, signals,
 concerns, expectations, and likely near-term outlook.
 </p>
 </div>
@@ -285,8 +285,7 @@ concerns, expectations, and likely near-term outlook.
 Your report is generated
 </h3>
 <p className="mt-2 leading-8 text-gray-600">
-Direction90 uses your submitted inputs to generate a
-structured report.
+Direction90 uses your inputs to generate a structured report.
 </p>
 </div>
 
@@ -328,8 +327,7 @@ What the report includes
 <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Headline</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
-A generated framing of the situation based on your submitted
-responses.
+A generated framing of the situation based on your answers.
 </p>
 </div>
 
@@ -344,8 +342,8 @@ your inputs.
 <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
 <h3 className="text-lg font-semibold">Signal breakdown</h3>
 <p className="mt-2 text-sm leading-7 text-white/75">
-Organized sections that show how your submitted responses
-relate to the generated report.
+Organized sections that show how your signals relate to the
+generated report.
 </p>
 </div>
 
@@ -388,7 +386,7 @@ Final call
 
 <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
 Complete the questionnaire and receive a generated report based on
-your submitted responses.
+your answers.
 </p>
 
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
@@ -412,3 +410,4 @@ Refunds are handled according to our refund policy.
 </main>
 );
 }
+
